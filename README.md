@@ -1,2 +1,2 @@
-# Amazone-Clone
-Project - Amazone Clone using HTML and CSS.
+# Amazon-Clone
+Project - Amazon Clone using HTML and CSS.
