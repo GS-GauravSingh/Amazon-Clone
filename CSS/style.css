@@ -1,0 +1,107 @@
+/* || Basic Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+	font-family: var(--FONT-FAMILY);
+}
+
+body {
+	min-height: 100vh;
+}
+
+/* || CSS Variables */
+:root {
+	/* Fonts */
+	--FONT-FAMILY: Arial, Helvetica, sans-serif;
+	--HEADER-FONT-SIZE-NORMAL: 14px;
+	--HEADER-FONT-SIZE-SMALL: 12px;
+
+	/* Colors */
+	--PRIMARY-HEADER-BG-COLOR: #131921;
+	--SECONDARY-HEADER-BG-COLOR: #222f3e;
+	--HEADER-FONT-COLOR: white;
+}
+
+/* || Header Styles */
+header {
+	font-size: var(--HEADER-FONT-SIZE-NORMAL);
+	border: 1px solid white;
+}
+
+/* Header Font Styles */
+.header-font-small {
+	font-size: var(--HEADER-FONT-SIZE-SMALL);
+}
+.header-font-normal-bold {
+	font-weight: bold;
+}
+
+/* || Primary Header Styles - Primary Header Sticks to the Top When User Scrolls. */
+.primary-header-container {
+	background-color: var(--PRIMARY-HEADER-BG-COLOR);
+	color: var(--HEADER-FONT-COLOR);
+}
+
+
+/* Primary Header Styles - Left Side */
+.primary-header-left {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+/* Amazon Logo Styles */
+.logo {
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 2px;
+	padding: 1px 8px 0px 6px;
+	justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+	height: 50px;
+	width: 120px;
+	padding: 0.5rem 0.1rem 0.5rem 0.5rem;
+}
+
+.logo p {
+	padding-bottom: 0.2rem;
+}
+
+/* Delivery Locaton */
+.delivery-location {
+	display: flex;
+	flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2px;
+	padding: 1px 8px 5px 6px;
+}
+
+.delivery-location i {
+    margin: 0.5rem 0.2rem 0rem 0rem;
+}
+
+/* Hover Styles */
+.logo:hover,
+.delivery-location:hover
+{
+    outline: 1px solid white;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 1px;
+}
+
+/* Primary Header Styles - Left Side Styles Ends here.  */
+
