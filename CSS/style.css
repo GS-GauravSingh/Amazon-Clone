@@ -17,6 +17,7 @@ html {
 
 body {
 	min-height: 100vh;
+	min-width: 100vh;
 }
 
 /* || CSS Variables */
@@ -30,6 +31,11 @@ body {
 	--PRIMARY-HEADER-BG-COLOR: #131921;
 	--SECONDARY-HEADER-BG-COLOR: #222f3e;
 	--HEADER-FONT-COLOR: white;
+}
+
+/* No Wrap */
+.no-wrap {
+	white-space: nowrap;
 }
 
 /* || Header Styles */
@@ -50,8 +56,10 @@ header {
 .primary-header-container {
 	background-color: var(--PRIMARY-HEADER-BG-COLOR);
 	color: var(--HEADER-FONT-COLOR);
-}
 
+	display: flex;
+	flex-wrap: nowrap;
+}
 
 /* Primary Header Styles - Left Side */
 .primary-header-left {
@@ -66,7 +74,7 @@ header {
 	margin: 2px;
 	padding: 1px 8px 0px 6px;
 	justify-content: center;
-    align-items: center;
+	align-items: center;
 }
 
 .logo img {
@@ -83,25 +91,72 @@ header {
 .delivery-location {
 	display: flex;
 	flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
 
-    margin: 2px;
+	margin: 2px;
 	padding: 1px 8px 5px 6px;
 }
 
 .delivery-location i {
-    margin: 0.5rem 0.2rem 0rem 0rem;
+	margin: 0.5rem 0.2rem 0rem 0rem;
 }
 
 /* Hover Styles */
 .logo:hover,
-.delivery-location:hover
-{
-    outline: 1px solid white;
-    box-shadow: 0px 0px 5px white;
-    border-radius: 1px;
+.delivery-location:hover {
+	outline: 1px solid white;
+	box-shadow: 0px 0px 5px white;
+	border-radius: 1px;
 }
 
 /* Primary Header Styles - Left Side Styles Ends here.  */
 
+/* Primary Header Styles - Center Side Contains Search Bar.  */
+.primary-header-center {
+	border: 1px solid white;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+
+	margin: 2px;
+	padding: 1px 8px 5px 6px;
+}
+
+.search-bar input,
+.search-bar select,
+.search-bar i {
+	border: 1px solid white;
+	border: none;
+	outline: none;
+	padding: 0.5rem;
+}
+
+.search-bar i {
+	background-color: #f3a846;
+	color: var(--PRIMARY-HEADER-BG-COLOR);
+	font-size: 18px;
+
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.search-bar select {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+
+	border-right: 1px solid #d4d4d4;
+	background-color: #d4d4d4;
+}
+
+.search-bar {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+/* Primary Header Styles - Center Side Styles Ends Here.  */
+
+/* Primary Header Styles - Right Side Styles Contains Language, Sign In, Returns and Orders, and Cart.  */
+
+/* Primary Header Styles - Right Side Styles Ends Here.  */
