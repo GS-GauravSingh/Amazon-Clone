@@ -72,19 +72,21 @@ header {
 	display: flex;
 	flex-wrap: nowrap;
 	margin: 2px;
-	padding: 1px 8px 0px 6px;
+	padding: 1px 15px 0px 6px;
 	justify-content: center;
 	align-items: center;
+
+	cursor: pointer;
 }
 
 .logo img {
 	height: 50px;
-	width: 120px;
-	padding: 0.5rem 0.1rem 0.5rem 0.5rem;
+	max-width: 120px;
+	padding: 0.6rem 0.1rem 0.6rem 0.5rem;
 }
 
 .logo p {
-	padding-bottom: 0.2rem;
+	margin-bottom: 0.4rem;
 }
 
 /* Delivery Locaton */
@@ -96,6 +98,8 @@ header {
 
 	margin: 2px;
 	padding: 1px 8px 5px 6px;
+
+	cursor: pointer;
 }
 
 .delivery-location i {
@@ -114,7 +118,6 @@ header {
 
 /* Primary Header Styles - Center Side Contains Search Bar.  */
 .primary-header-center {
-	border: 1px solid white;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
@@ -122,6 +125,8 @@ header {
 
 	margin: 2px;
 	padding: 1px 8px 5px 6px;
+
+	flex-grow: 1;
 }
 
 .search-bar input,
@@ -150,13 +155,126 @@ header {
 	background-color: #d4d4d4;
 }
 
+.search-bar input {
+	flex-grow: 1;
+}
+
 .search-bar {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
+	min-width: 100%;
+}
+
+/* Primary Header on Hover Styles */
+.search-bar:hover {
+	outline: 1px solid orange;
+	box-shadow: 0px 0px 5px white;
+	border-radius: 5px;
 }
 /* Primary Header Styles - Center Side Styles Ends Here.  */
 
 /* Primary Header Styles - Right Side Styles Contains Language, Sign In, Returns and Orders, and Cart.  */
-
 /* Primary Header Styles - Right Side Styles Ends Here.  */
+.primary-header-right {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Language Container */
+.select-language {
+	margin: 2px;
+	padding: 1px 8px 5px 6px;
+	cursor: pointer;
+}
+
+.select-language-inner-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	padding: 14px 0px 14px 0px;
+}
+
+.select-language-inner-container select {
+	border: none;
+	outline: none;
+
+	background-color: var(--PRIMARY-HEADER-BG-COLOR);
+	color: var(--HEADER-FONT-COLOR);
+
+	cursor: pointer;
+}
+
+.select-language-inner-container img {
+	width: 21px;
+	height: 16px;
+}
+
+/* Accounts and Sign In Container */
+.accounts-sign-in {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 10px;
+
+	cursor: pointer;
+}
+
+.accounts-sign-in select {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: var(--HEADER-FONT-COLOR);
+
+	cursor: pointer;
+}
+
+.accounts-sign-in p {
+	margin-left: 4px;
+}
+
+/* Reurns and orders */
+.returns-and-orders {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+
+	cursor: pointer;
+}
+
+/* Add to Cart */
+.add-to-cart {
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 12px;
+
+	cursor: pointer;
+}
+
+.add-to-cart i {
+	font-size: 25px;
+	margin-right: 4px;
+}
+
+.add-to-cart p {
+	display: flex;
+	align-items: flex-end;
+}
+
+/* Primary Header Right - Subcontainers on Hover Styles. */
+.select-language:hover,
+.accounts-sign-in:hover,
+.returns-and-orders:hover,
+.add-to-cart:hover {
+	outline: 1px solid white;
+	box-shadow: 0px 0px 5px white;
+	border-radius: 1px;
+}
+/* Primary Header Styles Ends Here. */
