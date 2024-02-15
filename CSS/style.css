@@ -308,7 +308,7 @@ header {
 	align-items: center;
 	padding: 10px;
 
-	margin: 1px;
+	margin-left: 2px;
 }
 
 .menu p {
@@ -324,6 +324,7 @@ header {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
+	flex-grow: 1;
 }
 
 .shopping-items {
@@ -351,8 +352,9 @@ header {
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
-	margin: 5px 4px 5px 0px;
-	padding: 0.2rem;
+	width: 250px;
+	height: 40px;
+	margin-right: 2px;
 }
 
 /*  Secondary Header Left, Center, Right - On Hover Styles */
