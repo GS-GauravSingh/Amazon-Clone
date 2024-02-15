@@ -16,7 +16,7 @@ html {
 }
 
 body {
-	min-height: 100vh;
+	min-height: 200vh;
 	min-width: 100vh;
 }
 
@@ -41,7 +41,6 @@ body {
 /* || Header Styles */
 header {
 	font-size: var(--HEADER-FONT-SIZE-NORMAL);
-	border: 1px solid white;
 }
 
 /* Header Font Styles */
@@ -59,6 +58,11 @@ header {
 
 	display: flex;
 	flex-wrap: nowrap;
+
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
 }
 
 /* Primary Header Styles - Left Side */
@@ -278,3 +282,85 @@ header {
 	border-radius: 1px;
 }
 /* Primary Header Styles Ends Here. */
+
+/* Secondary Header - Move upwards when user scroll. */
+.secondary-header-container {
+	background-color: var(--SECONDARY-HEADER-BG-COLOR);
+	color: var(--HEADER-FONT-COLOR);
+	max-height: 46px;
+	margin-top: 3.4rem;
+
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+/* Secondary Header Left - Hamburger Menu */
+.hamburger-menu-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.menu {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+
+	margin: 1px;
+}
+
+.menu p {
+	padding: 0rem 0.5rem;
+}
+
+.menu i {
+	font-size: 20px;
+}
+
+/* Secondary Header Center - Shopping Categories  */
+.shopping-categories-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.shopping-items {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2px;
+	row-gap: 10px;
+}
+
+.shopping-items li {
+	padding: 0.74rem;
+}
+
+/* Secondary Header Right - MiniTv Advertisement */
+.mini-tv-advertisement-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.advertisement {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	margin: 5px 4px 5px 0px;
+	padding: 0.2rem;
+}
+
+/*  Secondary Header Left, Center, Right - On Hover Styles */
+.menu:hover,
+.shopping-items li:hover,
+.advertisement:hover {
+	outline: 1px solid white;
+	box-shadow: 0px 0px 5px white;
+	border-radius: 1px;
+}
+/* Secondary Header Styles Ends Here. */
