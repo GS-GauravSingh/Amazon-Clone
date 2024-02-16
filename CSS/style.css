@@ -63,6 +63,8 @@ header {
 	top: 0px;
 	left: 0px;
 	right: 0px;
+
+	z-index: 10;
 }
 
 /* Primary Header Styles - Left Side */
@@ -366,3 +368,159 @@ header {
 	border-radius: 1px;
 }
 /* Secondary Header Styles Ends Here. */
+
+/* || Main Styles starts here. */
+/* main{
+	max-width: 1500px;
+	margin: auto;
+} */
+
+/* Background Image Container */
+.actual-background-image {
+	mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+	width: 100%;
+}
+
+/* Next Button Styling and Position */
+.next-button {
+	position: absolute;
+	width: 80px;
+	height: 250px;
+	background-color: transparent;
+	
+	/* 55px - height of Primary Header, 46px - Height of Secondary Header */
+	top: calc(55 + 46); 
+	right: 0px;
+	z-index: 9;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.prev-button {
+	position: absolute;
+	width: 80px;
+	height: 250px;
+	background-color: transparent;
+	
+	/* 55px - height of Primary Header, 46px - Height of Secondary Header */	
+	top: calc(55px + 46px);
+	left: 0px;
+	z-index: 9;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.next-button:hover, 
+.prev-button:hover{
+	border: 4px solid rgb(0, 153, 255);
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgb(0, 153, 255);
+}
+
+
+/* || Main - Boxes Container */
+.boxes-main-container{
+	/* position: absolute; */
+	/* 55px - height of Primary Header, 46px - Height of Secondary Header, 250px height of Background Image Buttons, 60px - Extra. */
+	/* top: calc(55px + 46px + 250px + 60px); */
+	margin: -20vw 2rem 0rem 2rem;
+	border: 1px solid red;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 41px;
+}
+
+/* Boxes Styling */
+.box{
+	display: flex;
+	flex-direction: column;
+
+	height: 400px;
+	max-width: 300px;
+	padding: 1rem;
+	background-color: white;
+	box-shadow: 0px 0px 5px black;
+	z-index: 9;
+
+	cursor: pointer;
+}
+
+.box h2{
+	margin-bottom: 1rem;
+}
+
+.box p{
+	margin-top: 0.5rem;
+	padding: 1rem 0rem 1rem 0rem;
+}
+
+.box p a{
+	color: rgb(0, 153, 255);
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.box p a:hover{
+	color: orangered;
+	text-decoration: underline;
+}
+
+.box-figures{
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(2, 130px);
+	grid-template-rows: repeat(2, 120px);
+}
+
+.box-figures figcaption{
+	padding: 0.5rem 0rem 0rem 0rem;
+	font-size: 12px;
+}
+
+
+/* Bikes Slider */
+.bikes-slider-container{
+	margin: 2rem;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	box-shadow: 0px 0px 2px black;
+	padding: 1rem;
+}
+
+.bikes-slider-container h2 a{
+	margin-left: 0.5rem;
+	font-size: 15px;
+	text-decoration: none;
+	color: rgb(0, 153, 255);
+}
+
+.bikes-slider-container h2 a:hover{
+	color: orangered;
+	text-decoration: underline;
+}
+
+.bikes-images-container{
+	margin-top: 1rem;
+	display: flex;
+	overflow-x: auto;
+	column-gap: 10px;
+}
+
