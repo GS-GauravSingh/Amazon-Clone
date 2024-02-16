@@ -16,8 +16,9 @@ html {
 }
 
 body {
-	min-height: 200vh;
+	min-height: 100vh;
 	min-width: 100vh;
+	background-color: #e2e6e6;
 }
 
 /* || CSS Variables */
@@ -387,9 +388,9 @@ header {
 	width: 80px;
 	height: 250px;
 	background-color: transparent;
-	
+
 	/* 55px - height of Primary Header, 46px - Height of Secondary Header */
-	top: calc(55 + 46); 
+	top: calc(55 + 46);
 	right: 0px;
 	z-index: 9;
 
@@ -406,8 +407,8 @@ header {
 	width: 80px;
 	height: 250px;
 	background-color: transparent;
-	
-	/* 55px - height of Primary Header, 46px - Height of Secondary Header */	
+
+	/* 55px - height of Primary Header, 46px - Height of Secondary Header */
 	top: calc(55px + 46px);
 	left: 0px;
 	z-index: 9;
@@ -420,21 +421,20 @@ header {
 	cursor: pointer;
 }
 
-.next-button:hover, 
-.prev-button:hover{
+.next-button:hover,
+.prev-button:hover {
 	border: 4px solid rgb(0, 153, 255);
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px rgb(0, 153, 255);
 }
 
-
 /* || Main - Boxes Container */
-.boxes-main-container{
+.boxes-main-container {
 	/* position: absolute; */
 	/* 55px - height of Primary Header, 46px - Height of Secondary Header, 250px height of Background Image Buttons, 60px - Extra. */
 	/* top: calc(55px + 46px + 250px + 60px); */
-	margin: -20vw 2rem 0rem 2rem;
-	border: 1px solid red;
+	margin: -19.2vw 2rem 0rem 2rem;
+	/* border: 1px solid red; */
 
 	display: flex;
 	flex-wrap: wrap;
@@ -444,7 +444,7 @@ header {
 }
 
 /* Boxes Styling */
-.box{
+.box {
 	display: flex;
 	flex-direction: column;
 
@@ -458,42 +458,41 @@ header {
 	cursor: pointer;
 }
 
-.box h2{
+.box h2 {
 	margin-bottom: 1rem;
 }
 
-.box p{
+.box p {
 	margin-top: 0.5rem;
 	padding: 1rem 0rem 1rem 0rem;
 }
 
-.box p a{
+.box p a {
 	color: rgb(0, 153, 255);
 	font-size: 14px;
 	font-weight: bold;
 	text-decoration: none;
 }
 
-.box p a:hover{
+.box p a:hover {
 	color: orangered;
 	text-decoration: underline;
 }
 
-.box-figures{
+.box-figures {
 	display: grid;
 	gap: 10px;
 	grid-template-columns: repeat(2, 130px);
 	grid-template-rows: repeat(2, 120px);
 }
 
-.box-figures figcaption{
+.box-figures figcaption {
 	padding: 0.5rem 0rem 0rem 0rem;
 	font-size: 12px;
 }
 
-
 /* Bikes Slider */
-.bikes-slider-container{
+.slider {
 	margin: 2rem;
 	background-color: white;
 	display: flex;
@@ -505,22 +504,211 @@ header {
 	padding: 1rem;
 }
 
-.bikes-slider-container h2 a{
+.slider h2 a {
 	margin-left: 0.5rem;
 	font-size: 15px;
 	text-decoration: none;
 	color: rgb(0, 153, 255);
 }
 
-.bikes-slider-container h2 a:hover{
+.slider h2 a:hover {
 	color: orangered;
 	text-decoration: underline;
 }
 
-.bikes-images-container{
+.slider-images-container {
 	margin-top: 1rem;
 	display: flex;
 	overflow-x: auto;
 	column-gap: 10px;
 }
 
+/* || Footer Styles Starts Here. */
+
+/* Sign In container */
+.footer-sign-in-container {
+	background-color: white;
+	padding: 2rem 0rem;
+}
+
+.footer-sign-in-container-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	border-top: 1px solid rgba(0, 0, 0, 0.295);
+	padding-top: 2rem;
+
+	border-bottom: 1px solid rgba(0, 0, 0, 0.295);
+	padding-bottom: 2rem;
+}
+
+.footer-sign-in-container-content .text1 {
+	font-size: 13px;
+}
+
+.footer-sign-in-container-content button {
+	margin: 0.5rem 0rem;
+	width: 230px;
+	background-image: linear-gradient(
+		to top,
+		goldenrod 50%,
+		rgba(255, 217, 0, 0.267) 100%
+	);
+	font-weight: bold;
+	padding: 0.5rem;
+	border-radius: 5px;
+	border: none;
+	outline: 2px solid goldenrod;
+}
+
+.footer-sign-in-container-content .text2 {
+	font-size: 11px;
+}
+
+.footer-sign-in-container-content .text2 a {
+	text-decoration: none;
+	color: rgb(0, 153, 255);
+}
+
+.footer-sign-in-container-content .text2 a:hover {
+	color: orangered;
+	text-decoration: underline;
+}
+
+/* Back To Top */
+.back-to-top-container {
+	background-color: #485769;
+	padding: 1rem;
+	text-align: center;
+}
+
+.back-to-top-container a {
+	font-size: 13px;
+	text-decoration: none;
+	color: white;
+}
+
+/* Main Footer */
+.main-footer-top-section-container {
+	background-color: #222f3e;
+	color: white;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.main-footer-top-section-sub-containers h3 {
+	font-size: 16px;
+}
+
+.main-footer-top-section-sub-containers p {
+	font-size: 12px;
+	margin: 0.5rem 0rem;
+}
+
+.main-footer-top-section-sub-containers {
+	margin-top: 2rem;
+}
+
+/* Main Fotter Center Division */
+.main-footer-center-section-container {
+	background-color: #222f3e;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-language img {
+	width: 76px;
+	height: 24px;
+	margin-top: 1rem;
+}
+
+.logo-language {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	margin-top: 1.5rem;
+	column-gap: 8rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.37);
+}
+
+.logo-language span {
+	display: flex;
+	gap: 10px;
+	padding: 1rem 0.5rem;
+	border: 1px solid rgba(255, 255, 255, 0.425);
+	border-radius: 5px;
+}
+
+.languages{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 0rem 4rem;
+	column-gap: 20px;
+	row-gap: 10px;
+	font-size: 12px;
+	margin-bottom: 2rem;
+}
+
+
+/* Main Fotter Bottom Section */
+.main-footer-bottom-section-container{
+	background-color: #121A22;
+	color: white;
+}
+
+.bottom-section-sub-containers{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 80px);
+
+	justify-content: center;
+	align-items: center;
+	padding: 0rem 10vw;
+}
+
+
+.sub-containers h3{
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.801);
+}
+
+.sub-containers p{
+	font-size: 11px;
+	color: rgba(255, 255, 255, 0.466);
+}
+
+/* Copyright Container */
+.copyright-container{
+	background-color: #121A22;
+	color: rgba(255, 255, 255, 0.795);
+	font-size: 11px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding-top: 2rem;
+
+}
+
+.copyright-container-subcontainer-one{
+	display: flex;
+	column-gap: 20px;
+	margin-bottom: 5px;
+}
+
+.copyright-container-subcontainer-two{
+	
+	margin-bottom: 2rem;
+}
