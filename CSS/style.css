@@ -326,6 +326,77 @@ header {
 	font-size: 20px;
 }
 
+/* Sidebar Style */
+.sidebar-container{
+	width: min(400px, 60vw);
+	height: 100vh;
+	background-color: white;
+	position: absolute;
+	top: 0px;
+	z-index: 999;
+	transform: translateX(-100%);
+	transition: all 0.5s ease-in-out;
+	overflow-y: auto;
+
+}
+
+.sidebar-container .hamburger-menu-close-button{
+	position: sticky;
+	right: 4px;
+	top: 15px;
+	cursor: pointer;
+	z-index: 1;
+	font-size: 2rem;
+	color: white;
+}
+
+.sidebar-container h1{
+	background-color: #222F3E;
+	padding:1rem;
+	top: 0px;
+	position: sticky;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sidebar-container h1 .user-logo{
+	background-color: white;
+	color: var(--PRIMARY-HEADER-BG-COLOR);
+	padding: 0.4rem;
+	border-radius: 50px;
+	margin-right: 5px;
+}
+
+.sidebar-navigation {
+	color: black;
+}
+
+/* .sidebar-navigation .sidebar-navigation-sub-section-top{
+
+} */
+.sidebar-navigation-sub-sections{
+	color: rgba(0, 0, 0, 0.849);
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+	padding-top: 1.5rem;
+}
+
+.sidebar-navigation-sub-sections h2{
+	padding: 0rem 0rem 0rem 2rem;
+	margin-bottom: 0.5rem;
+} 
+
+.sidebar-navigation-sub-sections p{
+	padding: 0.8rem 0rem 0.8rem 2rem;
+}
+
+.sidebar-navigation-sub-sections p:hover{
+	background-color: rgba(0, 0, 0, 0.164);
+}
+
+
 /* Secondary Header Center - Shopping Categories  */
 .shopping-categories-container {
 	display: flex;
@@ -341,6 +412,8 @@ header {
 	margin: 2px;
 	row-gap: 10px;
 	cursor: pointer;
+
+	color: #E2E6E6;
 }
 
 .shopping-items li {
@@ -470,7 +543,7 @@ main{
 	max-width: 300px;
 	padding: 1rem;
 	background-color: white;
-	/* box-shadow: 0px 0px 5px black; */
+	box-shadow: 0px 0px 5px black;
 	z-index: 9;
 
 	cursor: pointer;

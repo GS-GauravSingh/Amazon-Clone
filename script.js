@@ -42,3 +42,22 @@ nextButton.addEventListener("click", function () {
 prevButton.addEventListener("click", function () {
 	changeSliderImage("prev");
 });
+
+
+// Sidebar
+const sidebarElement = document.querySelector(".sidebar-container");
+const hamburgerMenuButton = document.querySelector(".hamburger-menu-container");
+const bodyElement = document.getElementsByTagName("body");
+console.log(bodyElement);
+hamburgerMenuButton.addEventListener('click', function(){
+	sidebarElement.style.transform = `translateX(0%)`;
+	bodyElement[0].style.overflowY = "hidden";
+	
+})
+
+// Close Button.
+const menuClose = document.querySelector(".sidebar-container .hamburger-menu-close-button");
+menuClose.addEventListener('click', function(){
+	sidebarElement.style.transform = `translateX(-100%)`;
+	bodyElement[0].style.overflowY = "auto";
+});
