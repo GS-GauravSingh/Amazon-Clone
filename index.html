@@ -177,14 +177,17 @@
 			<!-- Beckground Image Division -->
 			<div class="background-image-container">
 				<!-- Previous and Next Button -->
-				<div class="next-button">
+
+				<!-- The tabindex attribute is added to the div to make it focusable. -->
+				<div class="next-button" tabindex="0">
 					<i
 						class="fa-solid fa-chevron-right"
 						style="color: #000000"
 					></i>
 				</div>
-
-				<div class="prev-button">
+				
+				<!-- The tabindex attribute is added to the div to make it focusable. -->
+				<div class="prev-button" tabindex="0">
 					<i
 						class="fa-solid fa-chevron-left"
 						style="color: #000000"
@@ -201,7 +204,7 @@
 						class="actual-background-image"
 					/>
 
-					<!-- <img
+					<img
 						src="Images/Background_Banner_Images/GroceryItems_3000x1200.jpg"
 						alt="Grocery"
 						width="3000px"
@@ -239,7 +242,7 @@
 						width="3000px"
 						height="1200px"
 						class="actual-background-image"
-					/> -->
+					/>
 				</ul>
 			</div>
 
