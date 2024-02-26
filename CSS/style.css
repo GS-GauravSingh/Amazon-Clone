@@ -18,7 +18,6 @@ html {
 body {
 	min-height: 100vh;
 	min-width: 100vh;
-	background-color: #e2e6e6;
 }
 
 /* || CSS Variables */
@@ -328,7 +327,7 @@ header {
 
 /* Sidebar Style */
 .sidebar-container{
-	width: min(400px, 60vw);
+	min-width: min(400px, 60vw);
 	height: 100vh;
 	background-color: white;
 	position: absolute;
@@ -361,12 +360,19 @@ header {
 	align-items: center;
 }
 
+.sidebar-container h1 .user-logo-and-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
 .sidebar-container h1 .user-logo{
 	background-color: white;
 	color: var(--PRIMARY-HEADER-BG-COLOR);
 	padding: 0.4rem;
 	border-radius: 50px;
-	margin-right: 5px;
+	margin-right: 0.6rem;
 }
 
 .sidebar-navigation {
@@ -451,6 +457,11 @@ header {
 
 /* || Main Styles starts here. */
 main{
+	position: relative;
+	background-color: #e2e6e6;
+}
+
+.main-container{
 	max-width: 1500px;
 	margin: auto;
 }
